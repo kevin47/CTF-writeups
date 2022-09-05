@@ -1,0 +1,9 @@
+old_but_gold:
+    build: ./
+    volumes:
+        - ./share:/home/old_but_gold:ro
+        - ./tmp:/tmp:ro
+    ports:
+        - "80:8877"
+    expose:
+        - "8877"
